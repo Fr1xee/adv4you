@@ -23,6 +23,8 @@
     <string name="hint_name">Введите своё имя</string>
     <string name="hint_review">Напишите отзыв</string>
 
+    <string name="white_them">Белая тема</string>
+    <string name="black_them">Чёрная тема</string>
 
     <string name="type_consistent_description_part1">
         Последовательное постоянное размещение (Continuity):

@@ -9,8 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.adv4you.LifecycleOption;
-import com.example.adv4you.Order;
+import com.example.adv4you.lifecycles.LifecycleOption;
+import com.example.adv4you.pojos.Order;
 import com.example.adv4you.R;
 
 public class MakingAnOrder extends AppCompatActivity implements View.OnClickListener {

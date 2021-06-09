@@ -9,10 +9,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.adv4you.LifecycleOption;
+import com.example.adv4you.lifecycles.LifecycleOption;
 
 import com.example.adv4you.R;
-import com.example.adv4you.Review;
+import com.example.adv4you.pojos.Review;
 
 public class SendReview extends AppCompatActivity implements View.OnClickListener {
 
@@ -55,21 +55,25 @@ public class SendReview extends AppCompatActivity implements View.OnClickListene
                     LifecycleOption.getRef().child("/consistent/reviews").push().setValue(newOrder);
                     toast = Toast.makeText(this, "Ваш отзыв был отправлен", Toast.LENGTH_SHORT);
                     toast.show();
+                    finish();
                     break;
                 case "Флайтовый":
                     LifecycleOption.getRef().child("/flight/reviews").push().setValue(newOrder);
                     toast = Toast.makeText(this, "Ваш отзыв был отправлен", Toast.LENGTH_SHORT);
                     toast.show();
+                    finish();
                     break;
                 case "Импульсивный":
                     LifecycleOption.getRef().child("/impulsive/reviews").push().setValue(newOrder);
                     toast = Toast.makeText(this, "Ваш отзыв был отправлен", Toast.LENGTH_SHORT);
                     toast.show();
+                    finish();
                     break;
                 case "Сезонный":
                     LifecycleOption.getRef().child("/seasonal/reviews").push().setValue(newOrder);
                     toast = Toast.makeText(this, "Ваш отзыв был отправлен", Toast.LENGTH_SHORT);
                     toast.show();
+                    finish();
                     break;
             }
         }

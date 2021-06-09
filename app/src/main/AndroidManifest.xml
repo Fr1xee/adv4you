@@ -12,10 +12,10 @@
         <activity android:name=".activitys.SendReview"></activity>
         <activity android:name=".activitys.Reviews" />
         <activity android:name=".activitys.MakingAnOrder" />
-        <activity android:name=".activitys.Flight" />
-        <activity android:name=".activitys.Seasonal" />
-        <activity android:name=".activitys.Impulsive" />
-        <activity android:name=".activitys.Consistent" />
+        <activity android:name=".activitys.types.Flight" />
+        <activity android:name=".activitys.types.Seasonal" />
+        <activity android:name=".activitys.types.Impulsive" />
+        <activity android:name=".activitys.types.Consistent" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
