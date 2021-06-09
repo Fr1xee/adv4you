@@ -1,6 +1,7 @@
 package com.example.adv4you;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.Lifecycle;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -21,6 +22,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button mSeasonal;
     Button mFlight;
 
+    Lifecycle lifecycle;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +38,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mImpulsive.setOnClickListener(this);
         mSeasonal.setOnClickListener(this);
         mFlight.setOnClickListener(this);
+
+        LifecycleOption setLifecycle = new LifecycleOption();
+
+        lifecycle = getLifecycle();
+        lifecycle.addObserver(setLifecycle);
     }
 
 

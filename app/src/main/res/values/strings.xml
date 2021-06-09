@@ -3,13 +3,25 @@
 
     <string name="app_name">Adv4You</string>
 
-    <string name="type_consistent">Последовательно постоянный</string>
+    <string name="type_consistent">Последовательно-постоянный</string>
     <string name="type_impulsive">Импульсивный</string>
     <string name="type_seasonal">Сезонный</string>
     <string name="type_flight">Флайтовый</string>
 
     <string name="reviews">Отзывы</string>
     <string name="place_an_order">Оформить заказ</string>
+
+    <string name="hint_full_name">ФИО</string>
+    <string name="hint_phone">Контактный телефон</string>
+    <string name="hint_money">Ваш бюджет (в рублях)</string>
+    <string name="type">Тип продвижения:</string>
+    <string name="make_an_order">Оформить заказ</string>
+
+    <string name="add_review">Оставить отзыв</string>
+
+    <string name="send_review">Отправить отзыв</string>
+    <string name="hint_name">Введите своё имя</string>
+    <string name="hint_review">Напишите отзыв</string>
 
 
     <string name="type_consistent_description_part1">

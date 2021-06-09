@@ -2,14 +2,59 @@ package com.example.adv4you.activitys;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
 import com.example.adv4you.R;
 
-public class Flight extends AppCompatActivity {
+public class Flight extends AppCompatActivity implements View.OnClickListener {
+
+    Button placeAnOrder;
+    Button reviews;
+    TextView reviewsTW;
+    TextView placeAnOrderTW;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flight);
+
+        placeAnOrder = findViewById(R.id.place_an_order);
+        reviews = findViewById(R.id.reviews_button);
+        reviewsTW = findViewById(R.id.reviews_tw);
+        placeAnOrderTW = findViewById(R.id.place_an_order_tw);
+
+        placeAnOrder.setOnClickListener(this);
+        placeAnOrderTW.setOnClickListener(this);
+        reviews.setOnClickListener(this);
+        reviewsTW.setOnClickListener(this);
+    }
+
+    @SuppressLint("NonConstantResourceId")
+    @Override
+    public void onClick(View view) {
+
+        Intent newActivity;
+
+        switch (view.getId()) {
+            case R.id.reviews_button:
+            case R.id.reviews_tw:
+                newActivity = new Intent(Flight.this, Reviews.class);
+                newActivity.putExtra("type", "Флайтовый");
+                startActivity(newActivity);
+                break;
+            case R.id.place_an_order:
+            case R.id.place_an_order_tw:
+                newActivity = new Intent(Flight.this, MakingAnOrder.class);
+                newActivity.putExtra("type", "Флайтовый");
+                startActivity(newActivity);
+                break;
+
+        }
     }
 }

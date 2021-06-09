@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Adv4You">
-        <activity android:name=".activitys.Flight"></activity>
+        <activity android:name=".activitys.SendReview"></activity>
+        <activity android:name=".activitys.Reviews" />
+        <activity android:name=".activitys.MakingAnOrder" />
+        <activity android:name=".activitys.Flight" />
         <activity android:name=".activitys.Seasonal" />
         <activity android:name=".activitys.Impulsive" />
         <activity android:name=".activitys.Consistent" />
